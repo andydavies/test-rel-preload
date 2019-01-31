@@ -52,11 +52,11 @@
 				];
 
 				var fragment = document.createDocumentFragment();
-				for(font in fontsToPreload) {
+				for(font of fontsToPreload) {
 					var preload = document.createElement('link');
 					preload.rel = "preload";
-					preload.href = fontsToPreload[font].href;
-					preload.type = fontsToPreload[font].type;
+					preload.href = font.href;
+					preload.type = font.type;
 					preload.as = "font";
 					preload.crossOrigin = "anonymous";
 					fragment.appendChild(preload)
