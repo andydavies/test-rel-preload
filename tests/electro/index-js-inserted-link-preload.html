@@ -43,27 +43,26 @@
 		<script src="js/dummy-js-defer.js" defer></script>
 
 		<script>
-
 			(function () {
 				var fontsToPreload = [
-					"fonts/fontawesome-webfont.woff2?v=4.7.0",
-					"fonts/Montserrat-Medium.woff2",
-					"fonts/Montserrat-Regular.woff2",
-					"fonts/Montserrat-Bold.woff2"
+					{"href": "fonts/fontawesome-webfont.woff2?v=4.7.0", "type": "font/woff2"},
+					{"href": "fonts/Montserrat-Medium.woff2", "type": "font/woff2"},
+					{"href": "fonts/Montserrat-Regular.woff2", "type": "font/woff2"},
+					{"href": "fonts/Montserrat-Bold.woff2", "type": "font/woff2"}
 				];
 
 				var fragment = document.createDocumentFragment();
 				for(font in fontsToPreload) {
 					var preload = document.createElement('link');
 					preload.rel = "preload";
-					preload.href = fontsToPreload[font];
+					preload.href = fontsToPreload[font].href;
+					preload.type = fontsToPreload[font].type;
 					preload.as = "font";
 					preload.crossOrigin = "anonymous";
 					fragment.appendChild(preload)
 				}
 				document.head.appendChild(fragment);
 			})();
-
 		</script>
 
     </head>
