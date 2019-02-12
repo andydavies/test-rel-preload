@@ -51,6 +51,9 @@ https://d1mqs4cikzff9z.cloudfront.net/test-rel-preload/tests/electro/index-link-
 
 # WebPageTest Results
 
+Not every variation is in these results, for example CloudFront's HTTP/2 prioritisation isn't great so testing on it was abandoned quickly and Chrome's prioritisation of preloads meant there was little point tesing declarative preloads in the body.
+
+
 | URL | Scenario | WPT ID | Results URL |
 |-----|----------|--------|-------------|
 |	https://andydavies.github.io/test-rel-preload/tests/electro/index-base.html	|	Dulles, Chrome, Cable	|	190208_RD_e7b7ae540c436d14a560baa0380f66a6	|	https://www.webpagetest.org/result/190208_RD_e7b7ae540c436d14a560baa0380f66a6/	|
