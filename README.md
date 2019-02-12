@@ -4,8 +4,8 @@ Tests to explore positioning of rel="preload" links
 # Variations
 
 | URL | Description |
-|-----|-------------}
-| /test-rel-preload/tests/electro/index.html | Initial templace with no changes except performance mark for fonts loaded|
+|-----|-------------|
+| /test-rel-preload/tests/electro/index.html | Initial templace with no changes except performance mark for fonts loaded |
 | /test-rel-preload/tests/electro/index-base.html | Base page with no preload and scripts in head |
 | /test-rel-preload/tests/electro/index-link-preload-start-head.html | Declarative preload at start of head |
 | /test-rel-preload/tests/electro/index-link-preload-end-head.html | Declarative preload at end of head element |
