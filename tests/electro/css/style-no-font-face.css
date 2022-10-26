@@ -753,6 +753,7 @@ textarea.input {
 }
 
 .shop .shop-img>img {
+  aspect-ratio: 1.5/1;
   width: 100%;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
